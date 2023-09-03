@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Logo of Page -->
+    <link rel="icon" type="icon" href="assets/images/logo.png" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+
+    <title>Yummy</title>
+  </head>
+  <body>
+    <aside>
+      <div class="content">
+        <nav>
+          <ul class="links">
+            <li><a class="search-link" href="#">Search</a></li>
+            <li><a href="meal-category.html">Categories</a></li>
+            <li><a href="area.html">Are</a></li>
+            <li><a href="ingredients.html">Ingredients</a></li>
+            <li><a href="contact.html">Contact US</a></li>
+          </ul>
+
+          <div class="info">
+            <div class="icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <p class="copyright">Copyright M© 2019 All Rights Reserved.</p>
+          </div>
+        </nav>
+        <div class="logo">
+          <a href="index.html"><img src="assets/images/logo.png" alt="" /></a>
+          <i class="fa-solid fa-bars bars"></i>
+
+          <div class="icon">
+            <i class="fa-solid fa-globe"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <article>
+        <div class="loading" id="loading">
+          <div class="load"></div>
+        </div>
+
+        <div class="search container">
+          <form>
+            <input
+              type="text"
+              name="search-by-name"
+              autocomplete="off"
+              id="search-name"
+              placeholder="Search By Name"
+            />
+            <input
+              type="text"
+              name="search-by-first-letter"
+              autocomplete="off"
+              id="search-letter"
+              placeholder="Search By Latter"
+            />
+          </form>
+        </div>
+
+        <div class="container categories grid-system"></div>
+      </article>
+    </main>
+
+    <!-- Link JS -->
+
+    <script defer type="module" src="assets/js/global.js"></script>
+    <script type="module" src="assets/js/meal-list.js"></script>
+  </body>
+</html>
