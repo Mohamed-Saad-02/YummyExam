@@ -40,23 +40,7 @@ fetchDataFromServer(
             <div class="recipes">
               <h3>Recipes :</h3>
               <div class="info">
-                <ul>
-                  <li>
-                    <span>1 cup Lentils</span>
-                  </li>
-                  <li>
-                    <span>1 cup Lentils</span>
-                  </li>
-                  <li>
-                    <span>1 cup Lentils</span>
-                  </li>
-                  <li>
-                    <span>1 cup Lentils</span>
-                  </li>
-                  <li>
-                    <span>1 cup Lentils</span>
-                  </li>
-                </ul>
+                <ul></ul>
               </div>
             </div>
 
@@ -81,6 +65,22 @@ fetchDataFromServer(
           detailsSection
             .querySelector(".text .tags")
             .firstElementChild.appendChild(span);
+        }
+      }
+
+      // Recipes
+
+      for (let i = 1; i <= 20; i++) {
+        if (meals[`strIngredient${i}`] !== "") {
+          let li = document.createElement("li");
+
+          li.innerHTML = `
+          <span>${meals[`strMeasure${i}`]} ${meals[`strIngredient${i}`]}</span>
+          `;
+
+          detailsSection
+            .querySelector(".text .recipes .info ul")
+            .appendChild(li);
         }
       }
 
